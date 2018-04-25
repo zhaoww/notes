@@ -19,10 +19,10 @@ static final int MAXIMUM_CAPACITY = 1 << 30;
 static final float DEFAULT_LOAD_FACTOR = 0.75f;
 ```
 2. **数据结构**  
-HashMap是一个“链表散列”,底层实现还是数组，只是数组的每一项都是一条链【单向链表】。其中table[0]存“key为null”的元素，其他通过hash()计算hash值
+HashMap是一个“链表散列”,底层实现还是数组，只是数组的每一项都是一条链【单向链表】。其中table[0]存“key为null”的元素，其他通过hash()计算hash值  
 ![数据结构](https://images0.cnblogs.com/blog/381060/201401/152128347367.png)
 3. 解决冲突【拉链法、哈希桶】  
-hashCode是使用Key通过hash()计算出来的，不同的Key可能会得到同样的hashCode。通过拉链法解决冲突，把hashCode相同的拉个链表。
+hashCode是使用Key通过hash()计算出来的，不同的Key可能会得到同样的hashCode。通过拉链法解决冲突，把hashCode相同的拉个链表。  
 ![拉链法](https://images2017.cnblogs.com/blog/1165325/201708/1165325-20170821134711230-1857962628.png)
 4. 计算hash以及table索引
 ```

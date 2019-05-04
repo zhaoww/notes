@@ -1,5 +1,5 @@
 跑测试用例可以看出aliSkcService这个类已经被CGLIB代理了  
-![@Test](https://raw.githubusercontent.com/zhaoww/picbed/master/%E5%9B%BE%E5%BA%8A/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A120190504142421.png?token=AC6AR6RSYXYO72HWJYYZ4QS4ZU5LA)
+![Test](https://raw.githubusercontent.com/zhaoww/picbed/master/%E5%9B%BE%E5%BA%8A/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A120190504142421.png?token=AC6AR6RSYXYO72HWJYYZ4QS4ZU5LA)
 继续追踪，进入了org.springframework.aop.framework.CglibAopProxy.DynamicAdvisedInterceptor#intercept
 ```
 public Object intercept(Object proxy, Method method, Object[] args, MethodProxy methodProxy) throws Throwable {
